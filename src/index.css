@@ -1,0 +1,67 @@
+:root {
+  --bg-dark: #09090b;
+  --bg-card: #121214;
+  --bg-sidebar: #09090b;
+  --primary: #10b981;
+  /* Emerald green from logo */
+  --primary-glow: rgba(16, 185, 129, 0.2);
+  --danger: #ef4444;
+  /* Crimson for overspending */
+  --danger-glow: rgba(239, 68, 68, 0.2);
+  --text-main: #ffffff;
+  --text-muted: #71717a;
+  --border: #1f1f23;
+
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.placeholder-page {
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}

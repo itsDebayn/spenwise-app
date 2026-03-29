@@ -1,0 +1,124 @@
+.expenses-container {
+    animation: fadeIn 0.5s ease;
+}
+
+.expenses-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.table-card {
+    padding: 0;
+}
+
+.table-header {
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.table-header h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.table-header .subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.search-bar {
+    flex: 1;
+    background-color: #09090b;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: var(--text-muted);
+}
+
+.search-bar input {
+    background: none;
+    border: none;
+    padding: 0.6rem 0.5rem;
+    color: var(--text-main);
+    width: 100%;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.category-select {
+    background-color: #09090b;
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    border-radius: 8px;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.expenses-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expenses-table th {
+    padding: 1rem 2rem;
+    text-align: left;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+}
+
+.expenses-table td {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.expenses-table tr:last-child td {
+    border-bottom: none;
+}
+
+.expenses-table .description {
+    font-weight: 500;
+}
+
+.expenses-table .actions {
+    text-align: right;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    color: var(--danger);
+    background-color: var(--danger-glow);
+}
+
+.sort-icon {
+    font-size: 0.7rem;
+    margin-left: 0.25rem;
+}
+
+.text-right {
+    text-align: right !important;
+}

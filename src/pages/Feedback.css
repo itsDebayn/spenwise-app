@@ -1,0 +1,117 @@
+.feedback-container {
+    animation: fadeIn 0.5s ease;
+}
+
+.feedback-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.feedback-stats .stat-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-card {
+    padding: 0;
+}
+
+.list-header {
+    padding: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.list-header h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.list-header .subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-item {
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-info .merchant {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.review-info .amount {
+    font-weight: 500;
+}
+
+.review-info .meta {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+.review-info .assigned {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.review-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.correct-btn,
+.recategorize-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.correct-btn {
+    background-color: transparent;
+    color: var(--primary);
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+.correct-btn:hover {
+    background-color: var(--primary-glow);
+}
+
+.recategorize-btn {
+    background-color: transparent;
+    color: #f59e0b;
+    border-color: rgba(245, 158, 11, 0.2);
+}
+
+.recategorize-btn:hover {
+    background-color: rgba(245, 158, 11, 0.1);
+}
